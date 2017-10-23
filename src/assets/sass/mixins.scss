@@ -1,0 +1,41 @@
+@mixin slide($end) {
+    @for $i from 0 through $end {
+        @if $i == 0 {
+            .slide0 { left: 100%; }
+        }
+        @else {
+            .slide#{$i} { left: ($i + 1) * 100%; }
+        }
+    }
+
+    @for $i from 0 through $end {
+        @if $i == 0 {
+            .slide-radio0:checked ~ .slider {
+                -webkit-transform: translateX(-100%);
+                transform: translateX(-100%);
+            }
+        }
+        @else {
+            .slide-radio#{$i}:checked ~ .slider {
+                -webkit-transform: translateX(($i + 1) * -100%);
+                transform: translateX(($i + 1) * -100%);
+            }
+        }
+    }
+
+    @for $i from 0 through $end {
+        .slide-radio#{$i}:checked ~ .slide#{$i} h2,
+        .slide-radio#{$i}:checked ~ .slide#{$i} .presenter-bio {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+            opacity: 1;
+            text-align: left;
+        }
+
+        .slide-radio#{$i}:checked ~ .slider-pagination .presenterLink#{$i} {
+            color: #9a22bc;
+            font-size: 24px;
+            border-bottom-width: 0;
+        }
+    }
+}

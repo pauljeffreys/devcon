@@ -1,0 +1,393 @@
+body {
+  background-color: #190d2f;
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden; }
+
+body * {
+  box-sizing: border-box; }
+
+/***********************************/
+/* Top Nav and Bottom Footer Start */
+/***********************************/
+.content-fixed-header,
+.content-fixed-footer {
+  position: fixed;
+  left: 0;
+  padding: 20px;
+  width: 100%;
+  z-index: 100;
+  background-color: #190d2f; }
+  .content-fixed-header a,
+  .content-fixed-footer a {
+    color: #fff;
+    text-decoration: none; }
+
+.content-fixed-header {
+  top: 0; }
+  .content-fixed-header .nav-home {
+    float: left; }
+  .content-fixed-header .main-menu {
+    float: right; }
+    .content-fixed-header .main-menu a {
+      margin-left: 24px;
+      font-size: 16px;
+      font-weight: 700;
+      text-transform: uppercase; }
+      .content-fixed-header .main-menu a:nth-of-type(1) {
+        margin-left: 0; }
+      .content-fixed-header .main-menu a:hover {
+        border-bottom: 2px solid #9a22bc; }
+
+.content-fixed-footer {
+  bottom: 0;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 16px;
+  display: flex; }
+  .content-fixed-footer .footer-left,
+  .content-fixed-footer .footer-center,
+  .content-fixed-footer .footer-right {
+    flex-grow: 1;
+    width: 33%; }
+  .content-fixed-footer .footer-center {
+    text-align: center; }
+  .content-fixed-footer .footer-right {
+    text-align: right; }
+
+/*********************************/
+/* Top Nav and Bottom Footer End */
+/*********************************/
+/*************************/
+/* Homepage Styles Start */
+/*************************/
+.content-container-home {
+  background-image: url("/src/assets/images/homepage_bg.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 110vh;
+  padding: 0;
+  margin: 0; }
+  .content-container-home .content-home {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+
+/***********************/
+/* Homepage Styles End */
+/***********************/
+/******************************/
+/* Generic Page Layout Styles */
+/******************************/
+[class^=content-container-] {
+  padding: 50px 20px;
+  height: 100vh;
+  background-repeat: no-repeat; }
+  [class^=content-container-]:not(.content-container-home) {
+    background-size: 320px 100%; }
+  [class^=content-container-] .page-header {
+    position: relative;
+    margin-left: 10%;
+    float: left;
+    width: 30%;
+    top: 20%; }
+    [class^=content-container-] .page-header .page-title {
+      font-size: 100px;
+      text-transform: uppercase;
+      padding: 0 30px;
+      position: relative;
+      font-weight: 500;
+      z-index: 10; }
+    [class^=content-container-] .page-header .rectangle-2 {
+      height: 119px;
+      width: 247px;
+      border: 2px solid #9A22BC;
+      display: inline-block;
+      position: absolute;
+      top: 30px;
+      left: 0;
+      z-index: 5; }
+    [class^=content-container-] .page-header .page-content {
+      font-size: 24px;
+      font-weight: 300;
+      float: left;
+      width: 40%;
+      position: relative;
+      padding-left: 200px;
+      top: 20%; }
+
+/* Presenter Page Specific Styles */
+.content-container-presenters {
+  padding: 0 !important;
+  margin: -20px 0 0; }
+  .content-container-presenters .presenter-info-cell .presenter-nav-name {
+    font-size: 14px; }
+  .content-container-presenters .presenter-info-wrapper {
+    width: 62%;
+    margin-left: 15%; }
+
+/**************************/
+/* Page Background Styles */
+/**************************/
+.content-container-about {
+  background-image: url("/src/assets/images/bg-about.jpg");
+  background-position: left center; }
+
+.content-container-presenters {
+  background-image: url("/src/assets/images/bg-presenters.jpg");
+  background-position: right center; }
+
+.content-container-schedule {
+  background-image: url("/src/assets/images/bg-schedule.jpg");
+  background-position: left center;
+  height: 100%; }
+
+/*******************/
+/* Schedule Styling*/
+/*******************/
+.content-container-schedule {
+  text-align: center; }
+  .content-container-schedule .schedule-container {
+    padding: 30px 0 0 0;
+    margin-left: 24px; }
+    .content-container-schedule .schedule-container:after {
+      content: '';
+      height: 100px;
+      display: table;
+      clear: both; }
+    .content-container-schedule .schedule-container .schedule-filler {
+      background-color: rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      width: 100%; }
+    .content-container-schedule .schedule-container .slick-prev {
+      left: -30px; }
+      .content-container-schedule .schedule-container .slick-prev:before {
+        content: "<" !important;
+        font-weight: 700; }
+    .content-container-schedule .schedule-container .slick-next {
+      right: -10px; }
+      .content-container-schedule .schedule-container .slick-next:before {
+        content: ">" !important;
+        font-weight: 700; }
+    .content-container-schedule .schedule-container .schedule-container-div h3 {
+      font-size: 40px;
+      margin: 0 0 10px 0;
+      padding: 0; }
+    .content-container-schedule .schedule-container .schedule-container-div .schedule-details-container {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: row;
+      flex-direction: row; }
+      .content-container-schedule .schedule-container .schedule-container-div .schedule-details-container .schedule-times {
+        text-align: left; }
+      .content-container-schedule .schedule-container .schedule-container-div .schedule-details-container.right {
+        -webkit-flex-direction: row-reverse;
+        flex-direction: row-reverse; }
+        .content-container-schedule .schedule-container .schedule-container-div .schedule-details-container.right .schedule-times {
+          text-align: right; }
+      .content-container-schedule .schedule-container .schedule-container-div .schedule-details-container ul {
+        list-style-type: none;
+        margin: 0 25px 0 0;
+        padding: 10px 20px;
+        background-color: rgba(0, 0, 0, 0.2); }
+        .content-container-schedule .schedule-container .schedule-container-div .schedule-details-container ul li {
+          height: 170px;
+          font-weight: 300;
+          padding: 5px;
+          margin-bottom: 2px;
+          position: relative; }
+          .content-container-schedule .schedule-container .schedule-container-div .schedule-details-container ul li span {
+            font-weight: 500;
+            font-size: 18px; }
+          .content-container-schedule .schedule-container .schedule-container-div .schedule-details-container ul li.schedule-lunch {
+            height: 50px;
+            color: #190d2f;
+            background-color: rgba(255, 255, 255, 0.2);
+            margin-bottom: 100px;
+            font-weight: 500; }
+          .content-container-schedule .schedule-container .schedule-container-div .schedule-details-container ul li .schedule-details-hover {
+            background-color: #190d2f;
+            position: absolute;
+            transition: opacity 0.3s ease-in-out;
+            width: 350px;
+            opacity: 0;
+            padding: 20px;
+            z-index: 99999 !important;
+            font-size: 16px;
+            font-weight: 300;
+            box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.2);
+            visibility: hidden; }
+            .content-container-schedule .schedule-container .schedule-container-div .schedule-details-container ul li .schedule-details-hover:after {
+              content: '';
+              display: table;
+              clear: both; }
+          .content-container-schedule .schedule-container .schedule-container-div .schedule-details-container ul li:not(.schedule-last) .schedule-details-hover {
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%); }
+          .content-container-schedule .schedule-container .schedule-container-div .schedule-details-container ul li.schedule-last .schedule-details-hover {
+            bottom: 0 !important;
+            right: 0 !important; }
+          .content-container-schedule .schedule-container .schedule-container-div .schedule-details-container ul li.schedule-last.left .schedule-details-hover {
+            left: -23px !important; }
+          .content-container-schedule .schedule-container .schedule-container-div .schedule-details-container ul li:hover .schedule-details-hover {
+            opacity: 1;
+            visibility: visible;
+            transition: opacity 0.3s ease-in-out; }
+      .content-container-schedule .schedule-container .schedule-container-div .schedule-details-container .schedule-details {
+        flex-grow: 2; }
+
+.content-container-about .page-content {
+  overflow-y: hidden !important;
+  height: 100% !important;
+  margin-left: 50px; }
+
+@media only screen and (min-width: 961px) {
+  .content-container-about {
+    display: flex; }
+    .content-container-about .page-content {
+      padding-top: 170px; }
+      .content-container-about .page-content p {
+        max-width: 700px;
+        font-size: 24px;
+        font-weight: 200; }
+
+  .content-container-presenters .presenter-bio span {
+    white-space: nowrap; }
+  .content-container-presenters .presenter-bio h3 {
+    font-size: 32px; }
+
+  .content-container-schedule .schedule-container {
+    margin-top: 380px;
+    clear: left; }
+    .content-container-schedule .schedule-container .schedule-container-div h3 {
+      font-size: 32px;
+      margin: 0 0 20px 0; } }
+@media only screen and (min-width: 1280px) {
+  .content-container-schedule .hide {
+    display: none;
+    visibility: hidden; } }
+/******************/
+/* Mobile Styling */
+/******************/
+@media only screen and (orientation: portrait) {
+  .content-fixed-footer {
+    display: block; }
+
+  .content-fixed-footer .footer-left,
+  .content-fixed-footer .footer-center,
+  .content-fixed-footer .footer-right {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5em; }
+
+  .content-fixed-footer .footer-left,
+  .content-fixed-footer .footer-center {
+    position: relative; }
+
+  .content-fixed-footer .footer-left {
+    width: 54%;
+    float: left;
+    text-align: right; }
+
+  .content-fixed-footer .footer-center {
+    width: 40%;
+    float: right;
+    text-align: left; }
+
+  .content-fixed-footer .footer-right {
+    width: 100%;
+    display: block;
+    clear: both; }
+
+  .content-container-home .content-home img {
+    height: 100%;
+    width: 100%; } }
+@media only screen and (orientation: portrait) and (max-width: 960px) {
+  .content-fixed-footer {
+    padding: 20px 0 0; }
+
+  [class^=content-container-] .page-header,
+  [class^=content-container-] .page-content {
+    width: 100%;
+    display: block;
+    padding: 0;
+    margin: 0;
+    top: 0; }
+  [class^=content-container-] .page-header .rectangle-2 {
+    height: 100px;
+    width: 247px; }
+  [class^=content-container-] .page-content {
+    float: none;
+    height: 52%;
+    overflow-y: scroll; }
+  [class^=content-container-] .page-content h1 {
+    font-size: 40px; }
+  [class^=content-container-] .page-header .page-title {
+    padding: 50px 0 0 10px;
+    margin: 0;
+    font-size: 72px; }
+
+  .content-container-presenters .presenter-info-wrapper {
+    margin-left: 15%;
+    max-height: 540px;
+    overflow-y: scroll; }
+  .content-container-presenters .slider-pagination {
+    overflow-y: scroll; }
+  .content-container-presenters .presenter-info-wrapper::-webkit-scrollbar {
+    width: 0 !important; }
+  .content-container-presenters .presenter-info-wrapper::-moz-scrollbar {
+    width: 0 !important; }
+  .content-container-presenters .presenter-info-wrapper::scrollbar {
+    width: 0 !important; }
+  .content-container-presenters .presenter-info-wrapper {
+    top: 130px;
+    position: absolute;
+    right: 10px;
+    margin: 0; } }
+@media only screen and (orientation: portrait) and (max-width: 760px) {
+  .content-container-schedule .schedule-container-div .schedule-details-container.right {
+    -webkit-flex-direction: row !important;
+    flex-direction: row !important; }
+    .content-container-schedule .schedule-container-div .schedule-details-container.right .schedule-times {
+      text-align: left !important; } }
+@media only screen and (orientation: portrait) and (max-width: 500px) {
+  .schedule-details-hover {
+    width: 200px !important; } }
+@media only screen and (orientation: portrait) and (max-height: 500px) {
+  .content-fixed-footer .footer-left,
+  .content-fixed-footer .footer-center,
+  .content-fixed-footer .footer-right {
+    font-size: 18px; }
+
+  .content-container-home .content-home img {
+    width: 139px;
+    height: 300px; }
+
+  .content-container-presenters .slider-pagination {
+    height: 67%;
+    overflow-y: scroll; }
+  .content-container-presenters .slider-pagination::-webkit-scrollbar {
+    width: 0 !important; }
+  .content-container-presenters .slider-pagination::-moz-scrollbar {
+    width: 0 !important; }
+
+  .presenter-info-wrapper {
+    height: 290px; } }
+@media only screen and (orientation: portrait) and (max-height: 750px) {
+  .content-container-home .content-home {
+    left: 54%; }
+    .content-container-home .content-home img {
+      width: 80%;
+      height: 80%; } }
+
+/*# sourceMappingURL=devcon-styles.css.map */
