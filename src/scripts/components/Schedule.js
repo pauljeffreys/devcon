@@ -222,7 +222,7 @@ class Schedule extends React.Component {
                                                 <span>Exhil Cruz Michael</span><br />
                                                 Converting ideas into reality
                                                 <hr />
-                                                At some point,  whether its at work or outside we all get our Aha moment about a great idea but most of these Aha moments doesn’t come into reality and there is a science to converting great ideas into reality and this talk will cover the approach/framework to give your idea a best chance to become a reality.
+                                                At some point,  whether its at work or outside we all get our Aha moment about a great idea but most of these Aha moments doesn't come into reality and there is a science to converting great ideas into reality and this talk will cover the approach/framework to give your idea a best chance to become a reality.
                                                 <hr />
                                                 <span className="addtocalendar atc-style-blue">
                                                     <var className="atc_event">
@@ -230,7 +230,7 @@ class Schedule extends React.Component {
                                                         <var className="atc_date_end">2017-11-03 17:00:00</var>
                                                         <var className="atc_timezone">America/New_York</var>
                                                         <var className="atc_title">DevCon5 - Converting ideas into reality</var>
-                                                        <var className="atc_description">At some point,  whether its at work or outside we all get our Aha moment about a great idea but most of these Aha moments doesn’t come into reality and there is a science to converting great ideas into reality and this talk will cover the approach/framework to give your idea a best chance to become a reality.</var>
+                                                        <var className="atc_description">At some point,  whether its at work or outside we all get our Aha moment about a great idea but most of these Aha moments doesn't come into reality and there is a science to converting great ideas into reality and this talk will cover the approach/framework to give your idea a best chance to become a reality.</var>
                                                         <var className="atc_location">Lynnhaven Room, 20th Floor</var>
                                                         <var className="atc_organizer">Exhil Cruz Michael</var>
                                                         <var className="atc_organizer_email">ezhilmanoj.cruzmic@forrent.com</var>
@@ -290,7 +290,7 @@ class Schedule extends React.Component {
                                                 <hr />
                                                 Serverless is one of those new buzzwords that everyone seems to be throwing around. Is it really going to kill all other computing architectures? Is it just a new trend that will soon fade away and is not worth your time to learn? In this talk we will see what serverless architecture is, why it developed, and what problems it is intended to solve. It is important for all software developers to have a basic understanding of serverless computing because all major cloud providers (Google, Amazon, and Microsoft) are rolling out their own flavors of serverless architecture, and major tech companies are turning to the model to power various parts of the tech stack.
                                                 <br /><br />
-                                                We will sample the power and convenience of serverless computing by developing a simple web application using AWS Lambda functions and a few other AWS services. We will see how Lambda is able to completely eliminate the need for explicitly defined and managed server instances. Finally, we will see how to utilize a platform like Serverless (https://serverless.com/) to remove your application’s dependence on a single cloud provider.
+                                                We will sample the power and convenience of serverless computing by developing a simple web application using AWS Lambda functions and a few other AWS services. We will see how Lambda is able to completely eliminate the need for explicitly defined and managed server instances. Finally, we will see how to utilize a platform like Serverless (https://serverless.com/) to remove your application's dependence on a single cloud provider.
                                                 <hr />
                                                 <span className="addtocalendar atc-style-blue">
                                                     <var className="atc_event">
@@ -300,7 +300,7 @@ class Schedule extends React.Component {
                                                         <var className="atc_title">DevCon5 - Serverless Architecture - What, Why, and How?</var>
                                                         <var className="atc_description">Serverless is one of those new buzzwords that everyone seems to be throwing around. Is it really going to kill all other computing architectures? Is it just a new trend that will soon fade away and is not worth your time to learn? In this talk we will see what serverless architecture is, why it developed, and what problems it is intended to solve. It is important for all software developers to have a basic understanding of serverless computing because all major cloud providers (Google, Amazon, and Microsoft) are rolling out their own flavors of serverless architecture, and major tech companies are turning to the model to power various parts of the tech stack.
                                                         <br /><br />
-                                                        We will sample the power and convenience of serverless computing by developing a simple web application using AWS Lambda functions and a few other AWS services. We will see how Lambda is able to completely eliminate the need for explicitly defined and managed server instances. Finally, we will see how to utilize a platform like Serverless (https://serverless.com/) to remove your application’s dependence on a single cloud provider.</var>
+                                                        We will sample the power and convenience of serverless computing by developing a simple web application using AWS Lambda functions and a few other AWS services. We will see how Lambda is able to completely eliminate the need for explicitly defined and managed server instances. Finally, we will see how to utilize a platform like Serverless (https://serverless.com/) to remove your application's dependence on a single cloud provider.</var>
                                                         <var className="atc_location">York Room, 20th Floor</var>
                                                         <var className="atc_organizer">Daniel Warsnop</var>
                                                         <var className="atc_organizer_email">daniel.worsnup@forrent.com</var>
@@ -709,7 +709,7 @@ class Schedule extends React.Component {
                                                 <span>Silver Ibenye</span><br />
                                                 Lead Insights Aggregation With Apache Spark And Kafka - My experience
                                                 <hr />
-                                                A year ago I agreed to take up a challenge to re-implement ForRent’s Lead Insights data process. In this talk I will share the challenges I had and the lessons I learned using Apache Spark and Kafka to generate user insights for Leads (guest cards) submitted through the front-end website.
+                                                A year ago I agreed to take up a challenge to re-implement ForRent's Lead Insights data process. In this talk I will share the challenges I had and the lessons I learned using Apache Spark and Kafka to generate user insights for Leads (guest cards) submitted through the front-end website.
                                                 <hr />
                                                 <span className="addtocalendar atc-style-blue">
                                                     <var className="atc_event">
@@ -717,7 +717,7 @@ class Schedule extends React.Component {
                                                         <var className="atc_date_end">2017-11-03 17:00:00</var>
                                                         <var className="atc_timezone">America/New_York</var>
                                                         <var className="atc_title">DevCon5 - Lead Insights Aggregation With Apache Spark And Kafka - My experience</var>
-                                                        <var className="atc_description">A year ago I agreed to take up a challenge to re-implement ForRent’s Lead Insights data process. In this talk I will share the challenges I had and the lessons I learned using Apache Spark and Kafka to generate user insights for Leads (guest cards) submitted through the front-end website.</var>
+                                                        <var className="atc_description">A year ago I agreed to take up a challenge to re-implement ForRent's Lead Insights data process. In this talk I will share the challenges I had and the lessons I learned using Apache Spark and Kafka to generate user insights for Leads (guest cards) submitted through the front-end website.</var>
                                                         <var className="atc_location">Elizabeth Room, 20th Floor</var>
                                                         <var className="atc_organizer">Silver Ibenye</var>
                                                         <var className="atc_organizer_email">silver.ibenye@forrent.com</var>

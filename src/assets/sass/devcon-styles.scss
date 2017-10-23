@@ -182,15 +182,11 @@ body * {
 .content-container-about {
     background-image: url('/src/assets/images/bg-about.jpg');
     background-position: left center;
+    overflow: hidden;
 }
 .content-container-presenters {
     background-image: url('/src/assets/images/bg-presenters.jpg');
     background-position: right center;
-}
-.content-container-schedule {
-    background-image: url('/src/assets/images/bg-schedule.jpg');
-    background-position: left center;
-    height: 100%;
 }
 
 /*******************/
