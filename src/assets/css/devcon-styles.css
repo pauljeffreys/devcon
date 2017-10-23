@@ -245,6 +245,11 @@ body * {
             opacity: 1;
             visibility: visible;
             transition: opacity 0.3s ease-in-out; }
+      .content-container-schedule .schedule-container .schedule-container-div .schedule-details-container .atcb-list li {
+        height: 50px; }
+        .content-container-schedule .schedule-container .schedule-container-div .schedule-details-container .atcb-list li a {
+          width: 100%;
+          height: 100%; }
       .content-container-schedule .schedule-container .schedule-container-div .schedule-details-container .schedule-details {
         flex-grow: 2; }
 
