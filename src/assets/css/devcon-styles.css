@@ -236,6 +236,9 @@ body * {
             top: 0;
             left: 50%;
             transform: translateX(-50%); }
+          .content-container-schedule .schedule-container .schedule-container-div .schedule-details-container ul li.share-menu-up .atcb-list, .content-container-schedule .schedule-container .schedule-container-div .schedule-details-container ul li.schedule-last .atcb-list {
+            bottom: 0;
+            margin-top: -310px; }
           .content-container-schedule .schedule-container .schedule-container-div .schedule-details-container ul li.schedule-last .schedule-details-hover {
             bottom: 0 !important;
             right: 0 !important; }

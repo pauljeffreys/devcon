@@ -192,7 +192,7 @@ class Schedule extends React.Component {
                                                 </span>
                                             </div>
                                         </li>
-                                        <li>
+                                        <li className="share-menu-up">
                                             <span>Lucien Frelin</span><br />
                                             Creativity is a Tool
                                             <div className="schedule-details-hover">
@@ -357,7 +357,7 @@ class Schedule extends React.Component {
                                                 </span>
                                             </div>
                                         </li>
-                                        <li>
+                                        <li className="share-menu-up">
                                             <span>Chris Ryan</span><br />
                                             Refactoring; Updating code sanely
                                             <div className="schedule-details-hover">
@@ -518,7 +518,7 @@ class Schedule extends React.Component {
                                                 </span>
                                             </div>
                                         </li>
-                                        <li>
+                                        <li className="share-menu-up">
                                             <span>Loran Martin</span><br />
                                             QA Best Practices in an Agile Production Environment
                                             <div className="schedule-details-hover">
@@ -656,7 +656,7 @@ class Schedule extends React.Component {
                                                 </span>
                                             </div>
                                         </li>
-                                        <li>
+                                        <li className="share-menu-up">
                                             <span>Shivani Bima</span><br />
                                             CUDA programming on GPUs
                                             <div className="schedule-details-hover">
@@ -679,7 +679,7 @@ class Schedule extends React.Component {
                                                 </span>
                                             </div>
                                         </li>
-                                        <li>
+                                        <li className="share-menu-up">
                                             <span>Steve Jones</span><br />
                                             Data Pipelining and Operations with StreamSets
                                             <div className="schedule-details-hover">
