@@ -7,6 +7,19 @@ class Presenters extends React.Component {
         this.allData = DataStore.getAll();
     }
 
+    componentWillMount() {
+        const sliderStyles = document.createElement("link");
+              sliderStyles.setAttribute('id', 'sliderStyles');
+              sliderStyles.setAttribute('href', '/src/assets/css/slider-styles.css');
+              sliderStyles.setAttribute('rel', 'stylesheet');
+
+        document.head.appendChild(sliderStyles);
+    }
+
+    componentWillUnmount() {
+        document.getElementById('sliderStyles').remove();
+    }
+
     render() {
         const presenterRadio = this.allData.team.map((presenterRadio, index) =>
             <input

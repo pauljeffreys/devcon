@@ -199,6 +199,10 @@ body * {
 .content-container-schedule {
     text-align: center;
 
+    .page-header {
+        position: absolute;
+    }
+
     .schedule-container {
         padding: 30px 0 0 0;
         margin-left: 24px;
@@ -482,6 +486,14 @@ body * {
         }
     }
 
+    .content-container-schedule {
+        .page-header {
+            top: 50px;
+        }
+        .schedule-container {
+            padding-top: 150px;
+        }
+    }
     .content-container-presenters {
         .presenter-info-wrapper {
             margin-left: 15%;

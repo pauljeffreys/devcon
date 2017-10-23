@@ -1,6 +1,42 @@
 import Slider from 'react-slick';
 
 class Schedule extends React.Component {
+    componentWillMount() {
+        const styleNode = document.createElement("link");
+              styleNode.setAttribute('id', 'calendarStyle');
+              styleNode.setAttribute('rel', 'stylesheet');
+              styleNode.setAttribute('type', 'text/css');
+              styleNode.setAttribute('href', 'https://addtocalendar.com/atc/1.5/atc-style-blue.css');
+
+        const styleNodeSlickMin = document.createElement("link");
+              styleNodeSlickMin.setAttribute('id', 'calendarStyleSlickMin');
+              styleNodeSlickMin.setAttribute('rel', 'stylesheet');
+              styleNodeSlickMin.setAttribute('type', 'text/css');
+              styleNodeSlickMin.setAttribute('href', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css');
+
+        const styleNodeSlickThemeMin = document.createElement("link");
+              styleNodeSlickThemeMin.setAttribute('id', 'calendarStyleSlickThemeMin');
+              styleNodeSlickThemeMin.setAttribute('rel', 'stylesheet');
+              styleNodeSlickThemeMin.setAttribute('type', 'text/css');
+              styleNodeSlickThemeMin.setAttribute('href', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css');
+
+        const scriptNode = document.createElement("script");
+              scriptNode.setAttribute('id', 'calendarScript');
+              scriptNode.innerHTML = "(function () {if (window.addtocalendar)if(typeof window.addtocalendar.start == \"function\")return;if (window.ifaddtocalendar == undefined) { window.ifaddtocalendar = 1;var d = document, s = d.createElement('script'), g = 'getElementsByTagName';s.type = 'text/javascript';s.charset = 'UTF-8';s.async = true;s.src = ('https:' == window.location.protocol ? 'https' : 'http')+'://addtocalendar.com/atc/1.5/atc.min.js';var h = d[g]('body')[0];h.appendChild(s); }})();";
+
+        document.head.appendChild(styleNode);
+        document.head.appendChild(scriptNode);
+        document.head.appendChild(styleNodeSlickMin);
+        document.head.appendChild(styleNodeSlickThemeMin);
+    }
+
+    componentWillUnmount() {
+        document.getElementById('calendarScript').remove();
+        document.getElementById('calendarStyle').remove();
+        document.getElementById('calendarStyleSlickMin').remove();
+        document.getElementById('calendarStyleSlickThemeMin').remove();
+    }
+
     render() {
         const settings = {
             dots: false,
@@ -241,7 +277,7 @@ class Schedule extends React.Component {
                                         </li>
                                         <li>
                                             <span>Jeff Pratt</span><br />
-                                            Building Personal Assistant ‘Skills’ with Amazon Alexa
+                                            Building Personal Assistant "Skills" with Amazon Alexa
                                             <div className="schedule-details-hover">
                                                 <span>Jeff Pratt</span><br />
                                                 Building Personal Assistant ‘Skills’ with Amazon Alexa

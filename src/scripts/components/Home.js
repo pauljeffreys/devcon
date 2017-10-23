@@ -3,8 +3,8 @@ import DataStore    from 'flux/stores/DataStore.js'
 class Home extends React.Component {
     render() {
         let allData = DataStore.getAll();
-        console.log(allData);
-                let page = DataStore.getPageBySlug('home');
+            // console.log(allData);
+            let page = DataStore.getPageBySlug('home');
 
         return (
             <div className="content-container-home">
