@@ -121,24 +121,24 @@ class Schedule extends React.Component {
                                             </div>
                                         </li>
                                         <li>
-                                            <span>Alex Pedicini</span><br />
-                                            Get Out Of Your Office to Build Better Products
+                                            <span>Ezhil Manoj Cruz Micheal</span><br />
+                                            Converting ideas into reality
                                             <div className="schedule-details-hover">
-                                                <span>Alex Pedicini</span><br />
-                                                Get Out Of Your Office to Build Better Products
+                                                <span>Ezhil Manoj Cruz Micheal</span><br />
+                                                Converting ideas into reality
                                                 <hr />
-                                                Talk about the importance and value of regularly speaking with users to better understand their problems and solutions. This habit is the key to unlocking new product innovations and improvements that will actually make a difference in your customers lives.
+                                                At some point,  whether its at work or outside we all get our Aha moment about a great idea but most of these Aha moments doesn not come into reality and there is a science to converting great ideas into reality and this talk will cover the approach/framework to give your idea a best chance to become a reality.
                                                 <hr />
                                                 <span className="addtocalendar atc-style-blue">
                                                     <var className="atc_event">
                                                         <var className="atc_date_start">2017-11-03 11:00:00</var>
                                                         <var className="atc_date_end">2017-11-03 12:00:00</var>
                                                         <var className="atc_timezone">America/New_York</var>
-                                                        <var className="atc_title">DevCon5 - Get Out Of Your Office to Build Better Products</var>
-                                                        <var className="atc_description">Talk about the importance and value of regularly speaking with users to better understand their problems and solutions. This habit is the key to unlocking new product innovations and improvements that will actually make a difference in your customers lives.</var>
+                                                        <var className="atc_title">DevCon5 - Converting ideas into reality</var>
+                                                        <var className="atc_description">At some point,  whether its at work or outside we all get our Aha moment about a great idea but most of these Aha moments does not come into reality and there is a science to converting great ideas into reality and this talk will cover the approach/framework to give your idea a best chance to become a reality.</var>
                                                         <var className="atc_location">Lynnhaven Room, 20th Floor</var>
-                                                        <var className="atc_organizer">Alex Pedicini</var>
-                                                        <var className="atc_organizer_email">alex.pedicini@forrent.com</var>
+                                                        <var className="atc_organizer">Ezhil Manoj Cruz Micheal</var>
+                                                        <var className="atc_organizer_email">ezhilmanoj.cruzmic@forrent.com</var>
                                                     </var>
                                                 </span>
                                             </div>
@@ -216,24 +216,24 @@ class Schedule extends React.Component {
                                             </div>
                                         </li>
                                         <li className="schedule-last left">
-                                            <span>Ezhil Manoj Cruz Micheal</span><br />
-                                            Converting ideas into reality
+                                            <span>Alex Pedicini</span><br />
+                                            Get Out Of Your Office to Build Better Products
                                             <div className="schedule-details-hover">
-                                                <span>Ezhil Manoj Cruz Micheal</span><br />
-                                                Converting ideas into reality
+                                                <span>Alex Pedicini</span><br />
+                                                Get Out Of Your Office to Build Better Products
                                                 <hr />
-                                                At some point,  whether its at work or outside we all get our Aha moment about a great idea but most of these Aha moments doesn't come into reality and there is a science to converting great ideas into reality and this talk will cover the approach/framework to give your idea a best chance to become a reality.
+                                                Talk about the importance and value of regularly speaking with users to better understand their problems and solutions. This habit is the key to unlocking new product innovations and improvements that will actually make a difference in your customers lives.
                                                 <hr />
                                                 <span className="addtocalendar atc-style-blue">
                                                     <var className="atc_event">
                                                         <var className="atc_date_start">2017-11-03 16:00:00</var>
                                                         <var className="atc_date_end">2017-11-03 17:00:00</var>
                                                         <var className="atc_timezone">America/New_York</var>
-                                                        <var className="atc_title">DevCon5 - Converting ideas into reality</var>
-                                                        <var className="atc_description">At some point,  whether its at work or outside we all get our Aha moment about a great idea but most of these Aha moments doesn't come into reality and there is a science to converting great ideas into reality and this talk will cover the approach/framework to give your idea a best chance to become a reality.</var>
+                                                        <var className="atc_title">DevCon5 - Get Out Of Your Office to Build Better Products</var>
+                                                        <var className="atc_description">Talk about the importance and value of regularly speaking with users to better understand their problems and solutions. This habit is the key to unlocking new product innovations and improvements that will actually make a difference in your customers lives.</var>
                                                         <var className="atc_location">Lynnhaven Room, 20th Floor</var>
-                                                        <var className="atc_organizer">Ezhil Manoj Cruz Micheal</var>
-                                                        <var className="atc_organizer_email">ezhilmanoj.cruzmic@forrent.com</var>
+                                                        <var className="atc_organizer">Alex Pedicini</var>
+                                                        <var className="atc_organizer_email">alex.pedicini@forrent.com</var>
                                                     </var>
                                                 </span>
                                             </div>
@@ -602,7 +602,7 @@ class Schedule extends React.Component {
                                                         <var className="atc_description">As of March 2017, most modern browsers fully support the new CSS display type, Grid.  An easy and intuitive way make beautifully simple and exotically elaborate layouts on websites.  No more Bootstrap columns.  No more resource guzzling JavaScript.  Make resource friendly and responsive web applications with just a few quick lines of CSS.</var>
                                                         <var className="atc_location">Elizabeth Room, 20th Floor</var>
                                                         <var className="atc_organizer">Ken Crim</var>
-                                                        <var className="atc_organizer_email">kenneth.crim@commercialwebservices.comteja@homes.com</var>
+                                                        <var className="atc_organizer_email">kenneth.crim@commercialwebservices.com</var>
                                                     </var>
                                                 </span>
                                             </div>

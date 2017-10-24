@@ -3,11 +3,11 @@ import alt   from 'flux/alt/alt.js';
 
 class DataActions {
     constructor() {
-        // const appUrl = 'https://devcon.cafe/wordpress';                         // Wordpress installation url
-        this.pagesEndPoint = `/wordpress/wp-json/wp/v2/pages/?per_page=100`;     // Endpoint for getting Wordpress Pages
-        this.postsEndPoint = `/wordpress/wp-json/wp/v2/posts/?per_page=100`;     // Endpoint for getting Wordpress Posts
-        this.meetTeamEndPoint = `/wordpress/wp-json/wp/v2/team/?per_page=100`;   // Endpoint for getting Meet the Team Plugin
-        this.mediaEndPoint = `/wordpress/wp-json/wp/v2/media/?per_page=100`;     // Endpoint for getting Meet the Team Plugin
+        const appUrl = 'https://devcon.cafe/wordpress';                         // Wordpress installation url
+        this.pagesEndPoint = `${appUrl}/wp-json/wp/v2/pages/?per_page=100`;     // Endpoint for getting Wordpress Pages
+        this.postsEndPoint = `${appUrl}/wp-json/wp/v2/posts/?per_page=100`;     // Endpoint for getting Wordpress Posts
+        this.meetTeamEndPoint = `${appUrl}/wp-json/wp/v2/team/?per_page=100`;   // Endpoint for getting Meet the Team Plugin
+        this.mediaEndPoint = `${appUrl}/wp-json/wp/v2/media/?per_page=100`;     // Endpoint for getting Meet the Team Plugin
 
         // WP Endpoints
         // this.postsEndPoint = `${appUrl}/wp-json/wp/v2/posts`;                // Endpoint for getting Wordpress Posts

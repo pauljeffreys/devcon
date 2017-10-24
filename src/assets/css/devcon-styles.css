@@ -400,5 +400,10 @@ body * {
     .content-container-home .content-home img {
       width: 80%;
       height: 80%; } }
+/* Tablet Overrides */
+@media only screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1024px), only screen and (orientation: portrait) and (min-width: 834px) and (max-width: 834px), only screen and (orientation: portrait) and (min-width: 1024px) and (max-width: 1024px), only screen and (orientation: portrait) and (min-width: 1366px) and (max-width: 1366px) {
+  .content-container-presenters .presenter-info-wrapper {
+    width: 60%;
+    overflow-y: inherit; } }
 
 /*# sourceMappingURL=devcon-styles.css.map */
