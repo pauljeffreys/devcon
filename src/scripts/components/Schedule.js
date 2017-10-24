@@ -219,7 +219,7 @@ class Schedule extends React.Component {
                                             <span>Exhil Cruz Michael</span><br />
                                             Converting ideas into reality
                                             <div className="schedule-details-hover">
-                                                <span>Exhil Cruz Michael</span><br />
+                                                <span>Ezhil Manoj Cruz Micheal</span><br />
                                                 Converting ideas into reality
                                                 <hr />
                                                 At some point,  whether its at work or outside we all get our Aha moment about a great idea but most of these Aha moments doesn't come into reality and there is a science to converting great ideas into reality and this talk will cover the approach/framework to give your idea a best chance to become a reality.
@@ -232,7 +232,7 @@ class Schedule extends React.Component {
                                                         <var className="atc_title">DevCon5 - Converting ideas into reality</var>
                                                         <var className="atc_description">At some point,  whether its at work or outside we all get our Aha moment about a great idea but most of these Aha moments doesn't come into reality and there is a science to converting great ideas into reality and this talk will cover the approach/framework to give your idea a best chance to become a reality.</var>
                                                         <var className="atc_location">Lynnhaven Room, 20th Floor</var>
-                                                        <var className="atc_organizer">Exhil Cruz Michael</var>
+                                                        <var className="atc_organizer">Ezhil Manoj Cruz Micheal</var>
                                                         <var className="atc_organizer_email">ezhilmanoj.cruzmic@forrent.com</var>
                                                     </var>
                                                 </span>
@@ -282,7 +282,7 @@ class Schedule extends React.Component {
                                             </div>
                                         </li>
                                         <li>
-                                            <span>Daniel Warsnop</span><br />
+                                            <span>Daniel Worsnup</span><br />
                                             Serverless Architecture - What, Why, and How?
                                             <div className="schedule-details-hover">
                                                 <span>Daniel Warsnop</span><br />
