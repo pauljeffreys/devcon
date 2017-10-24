@@ -216,7 +216,7 @@ class Schedule extends React.Component {
                                             </div>
                                         </li>
                                         <li className="schedule-last left">
-                                            <span>Exhil Cruz Michael</span><br />
+                                            <span>Ezhil Manoj Cruz Micheal</span><br />
                                             Converting ideas into reality
                                             <div className="schedule-details-hover">
                                                 <span>Ezhil Manoj Cruz Micheal</span><br />
@@ -285,7 +285,7 @@ class Schedule extends React.Component {
                                             <span>Daniel Worsnup</span><br />
                                             Serverless Architecture - What, Why, and How?
                                             <div className="schedule-details-hover">
-                                                <span>Daniel Warsnop</span><br />
+                                                <span>Daniel Worsnup</span><br />
                                                 Serverless Architecture - What, Why, and How?
                                                 <hr />
                                                 Serverless is one of those new buzzwords that everyone seems to be throwing around. Is it really going to kill all other computing architectures? Is it just a new trend that will soon fade away and is not worth your time to learn? In this talk we will see what serverless architecture is, why it developed, and what problems it is intended to solve. It is important for all software developers to have a basic understanding of serverless computing because all major cloud providers (Google, Amazon, and Microsoft) are rolling out their own flavors of serverless architecture, and major tech companies are turning to the model to power various parts of the tech stack.
@@ -302,7 +302,7 @@ class Schedule extends React.Component {
                                                         <br /><br />
                                                         We will sample the power and convenience of serverless computing by developing a simple web application using AWS Lambda functions and a few other AWS services. We will see how Lambda is able to completely eliminate the need for explicitly defined and managed server instances. Finally, we will see how to utilize a platform like Serverless (https://serverless.com/) to remove your application's dependence on a single cloud provider.</var>
                                                         <var className="atc_location">York Room, 20th Floor</var>
-                                                        <var className="atc_organizer">Daniel Warsnop</var>
+                                                        <var className="atc_organizer">Daniel Worsnup</var>
                                                         <var className="atc_organizer_email">daniel.worsnup@forrent.com</var>
                                                     </var>
                                                 </span>
