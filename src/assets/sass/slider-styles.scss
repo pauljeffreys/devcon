@@ -170,18 +170,21 @@
 
       /* Slider Styles */
       @include slide(35);
-      .slide-radioDefault:checked ~ .slider-pagination .presenterLinkDefault {
-          color: #9a22bc;
-          font-size: 24px;
-          margin-bottom: 5px;
-          padding-bottom: 5px;
-      }
-      .slide-radioDefault:checked ~ .slideDefault h2,
-      .slide-radioDefault:checked ~ .slideDefault .presenter-bio {
-          -webkit-transform: translateX(0);
-          transform: translateX(0);
-          opacity: 1;
-          text-align: left;
+      .slide-radioDefault:checked {
+        & ~ .slider-pagination .presenterLinkDefault {
+            color: #9a22bc;
+            font-size: 24px;
+            margin-bottom: 5px;
+            padding-bottom: 5px;
+        }
+
+        & ~ .slideDefault h2,
+        & ~ .slideDefault .presenter-bio {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+            opacity: 1;
+            text-align: left;
+        }
       }
 
       .slideDefault .presenter-bio {
@@ -189,38 +192,47 @@
       }
 
     @media only screen and (max-width: 767px) {
-        .slider-pagination .presenterLinkDefault {
-            font-size: 20px;
+        .slider-pagination {
+            width: 120px;
+
+            .presenterLinkDefault {
+                font-size: 20px;
+            }
+
+            label {
+                font-size: 14px;
+            }
         }
 
-        .slider-pagination label {
-            font-size: 14px;
+        .slider {
+            h2 {
+                font-size: 32px;
+                margin: 0;
+                display: block;
+            }
+
+            & > div {
+                padding: 0 2%
+            }
+
+            .presenter-bio {
+                box-shadow: none;
+                padding: 0 30px;
+                margin-top: 10px;
+            }
         }
 
-        .slider h2 {
-            font-size: 20px;
-            margin: 0;
-            display: block;
-        }
-        .slider > div {
-            padding: 0 2%
-        }
         .control label {
             font-size: 35px;
         }
 
-        .slider .presenter-bio {
-            box-shadow: none;
-            padding: 0 30px;
-            margin-top: 10px;
+
+        .slideDefault .presenter-bio {
+            width: 60vw;
         }
 
         .presenter-info-wrapper h2 {
             text-align: right!important;
-        }
-
-        .slider-pagination {
-            width: 120px;
         }
     }
 }

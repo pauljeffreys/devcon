@@ -113,7 +113,7 @@ body * {
 /* Generic Page Layout Styles */
 /******************************/
 [class^=content-container-] {
-    padding: 50px 20px;
+    padding: 50px 20px 70px;
     height: 100vh;
     background-repeat: no-repeat;
 
@@ -175,7 +175,6 @@ body * {
     }
 }
 
-
 /**************************/
 /* Page Background Styles */
 /**************************/
@@ -235,10 +234,64 @@ body * {
         }
 
         .schedule-container-div {
+            position: relative;
+
             h3 {
-                font-size: 40px;
+                font-size: 32px;
                 margin: 0 0 10px 0;
-                padding: 0;
+                padding: 5px 5px 5px 30px;
+                position: relative;
+                text-align: left;
+                background-color: rgba(0, 0, 0, .2);
+
+                .room-video {
+                    position: absolute;
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: opacity 0.3s ease-in-out;
+                    background-color: rgba(25, 13, 47, 1);
+                    width: 350px;
+                    padding: 20px;
+                    z-index: 99999!important;
+                    font-size: 16px;
+                    font-weight: 300;
+                    box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.2);
+
+                    .video-disclaimer {
+                        font-size: 16px;
+                        // font-style: italic;
+                        font-weight: 300;
+                        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+                        margin-bottom: 10px;
+                        cursor: default;
+                    }
+
+                    a {
+                        text-align: center;
+                        width: 100%;
+                        color: #fff;
+
+                        .button_watch-live {
+                            margin: 0 auto;
+                        }
+                    }
+                }
+
+                .icon-video {
+                    position: absolute;
+                    top: 10px;
+                    right: 40px;
+                    cursor: pointer;
+
+                    &:hover .room-video {
+                        opacity: 1;
+                        visibility: visible;
+                        transition: opacity 0.3s ease-in-out;
+                        top: 0;
+                        left: 0;
+                        transform: translateX(-85%);
+                    }
+                }
             }
 
             .schedule-details-container {
@@ -280,11 +333,13 @@ body * {
 
 
                         &.schedule-lunch {
-                            height: 50px;
-                            color: #190d2f;
-                            background-color: rgba(255, 255, 255, 0.2);
-                            margin-bottom: 100px;
+                            // color: #190d2f;
+                            background-color: rgba(255, 255, 255, 0.1);
                             font-weight: 500;
+
+                            span {
+                                font-size: 20px;
+                            }
                         }
 
                         .schedule-details-hover {
@@ -366,10 +421,32 @@ body * {
 }
 
 .content-container-about {
+    position: relative;
+
     .page-content {
+        margin-left: 50px;
         overflow-y: hidden!important;
         height: 100%!important;
-        margin-left: 50px;
+        display: block;
+
+        .about-logos-container {
+            display: flex;
+            flex-direction: column;
+
+            .about-logos-row {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+
+                .about-logos-icon {
+                    padding: 15px 10px;
+
+                    .about-logo {
+                        height: 30px
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -386,6 +463,15 @@ body * {
                 font-weight: 200;
             }
 
+            .about-logos-container {
+                .about-logos-row {
+                    .about-logos-icon {
+                        .about-logo {
+                            height: 20px;
+                        }
+                    }
+                }
+            }
         }
     }
 
@@ -405,12 +491,13 @@ body * {
         .schedule-container {
             margin-top: 380px;
             clear: left;
+        }
+    }
 
-            .schedule-container-div {
-                h3 {
-                    font-size: 32px;
-                    margin: 0 0 20px 0;
-                }
+    h3 {
+        .icon-video-first {
+            &:hover .room-video {
+                transform: translateX(-85%);
             }
         }
     }
@@ -422,6 +509,60 @@ body * {
             display: none;
             visibility: hidden;
         }
+
+        h3 {
+            .icon-video-first {
+                &:hover .room-video {
+                    transform: translateX(-65%)!important;
+                }
+            }
+        }
+
+        .schedule-details-container {
+            ul {
+                li {
+                    &.schedule-lunch {
+                        height: 300px!important;
+                    }
+                }
+            }
+        }
+    }
+
+    .content-container-about {
+        .page-content {
+            .about-logos-container {
+                .about-logos-row {
+                    .about-logos-icon {
+                        .about-logo {
+                            height: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    .content-container-schedule {
+        h3 {
+            .icon-video-first {
+                &:hover .room-video {
+                    transform: translateX(-85%)!important;
+                }
+            }
+        }
+
+        .schedule-details-container {
+            ul {
+                li {
+                    &.schedule-lunch {
+                        height: 170px!important;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -431,33 +572,34 @@ body * {
 @media only screen and (orientation: portrait) {
     .content-fixed-footer {
         display: block;
-    }
-        .content-fixed-footer .footer-left,
-        .content-fixed-footer .footer-center,
-        .content-fixed-footer .footer-right {
+
+        .footer-left,
+        .footer-center,
+        .footer-right {
             text-align: center;
-            font-size: 18px;
+            font-size: 16px;
             line-height: 1.5em;
         }
-        .content-fixed-footer .footer-left,
-        .content-fixed-footer .footer-center {
+        .footer-left,
+        .footer-center {
             position: relative;
         }
-        .content-fixed-footer .footer-left {
-            width: 54%;
+        .footer-left {
+            width: 50%;
             float: left;
             text-align: right;
         }
-        .content-fixed-footer .footer-center {
-            width: 40%;
+        .footer-center {
+            width: 42%;
             float: right;
             text-align: left;
         }
-        .content-fixed-footer .footer-right {
+        .footer-right {
             width: 100%;
             display: block;
             clear: both;
         }
+    }
     .content-container-home .content-home img {
         height: 100%;
         width: 100%;
@@ -466,7 +608,7 @@ body * {
 
 @media only screen and (orientation: portrait) and (max-width: 960px) {
     .content-fixed-footer {
-        padding: 20px 0 0;
+        padding: 5px;
     }
 
     [class^=content-container-] {
@@ -507,7 +649,21 @@ body * {
         .schedule-container {
             padding-top: 150px;
         }
+
+        h3 {
+            margin: 0 0 10px 0;
+            padding: 5px 5px 5px 30px;
+            position: relative;
+            text-align: left;
+            background-color: rgba(0, 0, 0, .2);
+
+            .room-video {
+                left: 0;
+                width: 300px!important;
+            }
+        }
     }
+
     .content-container-presenters {
         .presenter-info-wrapper {
             margin-left: 15%;
@@ -533,14 +689,22 @@ body * {
             top: 130px;
             position: absolute;
             right: 10px;
-            margin: 0;
         }
     }
+
+
 }
 
 @media only screen and (orientation: portrait) and (max-width: 760px) {
     .content-container-schedule {
         .schedule-container-div {
+            h3 {
+                .icon-video-first {
+                    &:hover .room-video {
+                        transform: translateX(-85%);
+                    }
+                }
+            }
             .schedule-details-container {
                 &.right {
                     -webkit-flex-direction: row!important;
@@ -550,12 +714,56 @@ body * {
                         text-align: left!important;
                     }
                 }
+
+                ul {
+                    li {
+                        &.schedule-lunch {
+                            height: 220px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .content-container-about {
+        .page-content {
+            .about-logos-container {
+                .about-logos-row {
+                    .about-logos-icon {
+                        .about-logo {
+                            height: 25px;
+                        }
+                    }
+                }
             }
         }
     }
 }
 
 @media only screen and (orientation : portrait) and (max-width: 500px) {
+    .content-container-about {
+        .page-content {
+            .about-logos-container {
+                .about-logos-row {
+                    .about-logos-icon {
+                        .about-logo {
+                            height: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .content-fixed-footer {
+        .footer-left,
+        .footer-center,
+        .footer-right {
+            font-size: 14px;
+        }
+    }
+
     .schedule-details-hover {
         width: 200px!important;
     }
@@ -566,7 +774,7 @@ body * {
         .footer-left,
         .footer-center,
         .footer-right {
-            font-size: 18px;
+            font-size: 14px;
         }
     }
 
@@ -602,6 +810,16 @@ body * {
                 width: 80%;
                 height: 80%;
             }
+        }
+    }
+
+    .content-container-presenters {
+        .slider-pagination {
+            padding-bottom: 30px!important;
+        }
+
+        .presenter-bio {
+            padding-bottom: 80px!important;
         }
     }
 }

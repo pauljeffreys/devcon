@@ -89,7 +89,7 @@ body * {
 /* Generic Page Layout Styles */
 /******************************/
 [class^=content-container-] {
-  padding: 50px 20px;
+  padding: 50px 20px 70px;
   height: 100vh;
   background-repeat: no-repeat; }
   [class^=content-container-]:not(.content-container-home) {
@@ -176,86 +176,140 @@ body * {
       .content-container-schedule .schedule-container .slick-next:before {
         content: ">" !important;
         font-weight: 700; }
-    .content-container-schedule .schedule-container .schedule-container-div h3 {
-      font-size: 40px;
-      margin: 0 0 10px 0;
-      padding: 0; }
-    .content-container-schedule .schedule-container .schedule-container-div .schedule-details-container {
-      display: -webkit-flex;
-      display: flex;
-      -webkit-flex-direction: row;
-      flex-direction: row; }
-      .content-container-schedule .schedule-container .schedule-container-div .schedule-details-container .schedule-times {
-        text-align: left; }
-      .content-container-schedule .schedule-container .schedule-container-div .schedule-details-container.right {
-        -webkit-flex-direction: row-reverse;
-        flex-direction: row-reverse; }
-        .content-container-schedule .schedule-container .schedule-container-div .schedule-details-container.right .schedule-times {
-          text-align: right; }
-      .content-container-schedule .schedule-container .schedule-container-div .schedule-details-container ul {
-        list-style-type: none;
-        margin: 0 25px 0 0;
-        padding: 10px 20px;
+    .content-container-schedule .schedule-container .schedule-container-div {
+      position: relative; }
+      .content-container-schedule .schedule-container .schedule-container-div h3 {
+        font-size: 32px;
+        margin: 0 0 10px 0;
+        padding: 5px 5px 5px 30px;
+        position: relative;
+        text-align: left;
         background-color: rgba(0, 0, 0, 0.2); }
-        .content-container-schedule .schedule-container .schedule-container-div .schedule-details-container ul li {
-          height: 170px;
+        .content-container-schedule .schedule-container .schedule-container-div h3 .room-video {
+          position: absolute;
+          opacity: 0;
+          visibility: hidden;
+          transition: opacity 0.3s ease-in-out;
+          background-color: #190d2f;
+          width: 350px;
+          padding: 20px;
+          z-index: 99999 !important;
+          font-size: 16px;
           font-weight: 300;
-          padding: 5px;
-          margin-bottom: 2px;
-          position: relative; }
-          .content-container-schedule .schedule-container .schedule-container-div .schedule-details-container ul li span {
-            font-weight: 500;
-            font-size: 18px; }
-          .content-container-schedule .schedule-container .schedule-container-div .schedule-details-container ul li.schedule-lunch {
-            height: 50px;
-            color: #190d2f;
-            background-color: rgba(255, 255, 255, 0.2);
-            margin-bottom: 100px;
-            font-weight: 500; }
-          .content-container-schedule .schedule-container .schedule-container-div .schedule-details-container ul li .schedule-details-hover {
-            background-color: #190d2f;
-            position: absolute;
-            transition: opacity 0.3s ease-in-out;
-            width: 350px;
-            opacity: 0;
-            padding: 20px;
-            z-index: 99999 !important;
+          box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.2); }
+          .content-container-schedule .schedule-container .schedule-container-div h3 .room-video .video-disclaimer {
             font-size: 16px;
             font-weight: 300;
-            box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.2);
-            visibility: hidden; }
-            .content-container-schedule .schedule-container .schedule-container-div .schedule-details-container ul li .schedule-details-hover:after {
-              content: '';
-              display: table;
-              clear: both; }
-          .content-container-schedule .schedule-container .schedule-container-div .schedule-details-container ul li:not(.schedule-last) .schedule-details-hover {
-            top: 0;
-            left: 50%;
-            transform: translateX(-50%); }
-          .content-container-schedule .schedule-container .schedule-container-div .schedule-details-container ul li.share-menu-up .atcb-list, .content-container-schedule .schedule-container .schedule-container-div .schedule-details-container ul li.schedule-last .atcb-list {
-            bottom: 0;
-            margin-top: -310px; }
-          .content-container-schedule .schedule-container .schedule-container-div .schedule-details-container ul li.schedule-last .schedule-details-hover {
-            bottom: 0 !important;
-            right: 0 !important; }
-          .content-container-schedule .schedule-container .schedule-container-div .schedule-details-container ul li.schedule-last.left .schedule-details-hover {
-            left: -23px !important; }
-          .content-container-schedule .schedule-container .schedule-container-div .schedule-details-container ul li:hover .schedule-details-hover {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            margin-bottom: 10px;
+            cursor: default; }
+          .content-container-schedule .schedule-container .schedule-container-div h3 .room-video a {
+            text-align: center;
+            width: 100%;
+            color: #fff; }
+            .content-container-schedule .schedule-container .schedule-container-div h3 .room-video a .button_watch-live {
+              margin: 0 auto; }
+        .content-container-schedule .schedule-container .schedule-container-div h3 .icon-video {
+          position: absolute;
+          top: 10px;
+          right: 40px;
+          cursor: pointer; }
+          .content-container-schedule .schedule-container .schedule-container-div h3 .icon-video:hover .room-video {
             opacity: 1;
             visibility: visible;
-            transition: opacity 0.3s ease-in-out; }
-      .content-container-schedule .schedule-container .schedule-container-div .schedule-details-container .atcb-list li {
-        height: 50px; }
-        .content-container-schedule .schedule-container .schedule-container-div .schedule-details-container .atcb-list li a {
-          width: 100%;
-          height: 100%; }
-      .content-container-schedule .schedule-container .schedule-container-div .schedule-details-container .schedule-details {
-        flex-grow: 2; }
+            transition: opacity 0.3s ease-in-out;
+            top: 0;
+            left: 0;
+            transform: translateX(-85%); }
+      .content-container-schedule .schedule-container .schedule-container-div .schedule-details-container {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        flex-direction: row; }
+        .content-container-schedule .schedule-container .schedule-container-div .schedule-details-container .schedule-times {
+          text-align: left; }
+        .content-container-schedule .schedule-container .schedule-container-div .schedule-details-container.right {
+          -webkit-flex-direction: row-reverse;
+          flex-direction: row-reverse; }
+          .content-container-schedule .schedule-container .schedule-container-div .schedule-details-container.right .schedule-times {
+            text-align: right; }
+        .content-container-schedule .schedule-container .schedule-container-div .schedule-details-container ul {
+          list-style-type: none;
+          margin: 0 25px 0 0;
+          padding: 10px 20px;
+          background-color: rgba(0, 0, 0, 0.2); }
+          .content-container-schedule .schedule-container .schedule-container-div .schedule-details-container ul li {
+            height: 170px;
+            font-weight: 300;
+            padding: 5px;
+            margin-bottom: 2px;
+            position: relative; }
+            .content-container-schedule .schedule-container .schedule-container-div .schedule-details-container ul li span {
+              font-weight: 500;
+              font-size: 18px; }
+            .content-container-schedule .schedule-container .schedule-container-div .schedule-details-container ul li.schedule-lunch {
+              background-color: rgba(255, 255, 255, 0.1);
+              font-weight: 500; }
+              .content-container-schedule .schedule-container .schedule-container-div .schedule-details-container ul li.schedule-lunch span {
+                font-size: 20px; }
+            .content-container-schedule .schedule-container .schedule-container-div .schedule-details-container ul li .schedule-details-hover {
+              background-color: #190d2f;
+              position: absolute;
+              transition: opacity 0.3s ease-in-out;
+              width: 350px;
+              opacity: 0;
+              padding: 20px;
+              z-index: 99999 !important;
+              font-size: 16px;
+              font-weight: 300;
+              box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.2);
+              visibility: hidden; }
+              .content-container-schedule .schedule-container .schedule-container-div .schedule-details-container ul li .schedule-details-hover:after {
+                content: '';
+                display: table;
+                clear: both; }
+            .content-container-schedule .schedule-container .schedule-container-div .schedule-details-container ul li:not(.schedule-last) .schedule-details-hover {
+              top: 0;
+              left: 50%;
+              transform: translateX(-50%); }
+            .content-container-schedule .schedule-container .schedule-container-div .schedule-details-container ul li.share-menu-up .atcb-list, .content-container-schedule .schedule-container .schedule-container-div .schedule-details-container ul li.schedule-last .atcb-list {
+              bottom: 0;
+              margin-top: -310px; }
+            .content-container-schedule .schedule-container .schedule-container-div .schedule-details-container ul li.schedule-last .schedule-details-hover {
+              bottom: 0 !important;
+              right: 0 !important; }
+            .content-container-schedule .schedule-container .schedule-container-div .schedule-details-container ul li.schedule-last.left .schedule-details-hover {
+              left: -23px !important; }
+            .content-container-schedule .schedule-container .schedule-container-div .schedule-details-container ul li:hover .schedule-details-hover {
+              opacity: 1;
+              visibility: visible;
+              transition: opacity 0.3s ease-in-out; }
+        .content-container-schedule .schedule-container .schedule-container-div .schedule-details-container .atcb-list li {
+          height: 50px; }
+          .content-container-schedule .schedule-container .schedule-container-div .schedule-details-container .atcb-list li a {
+            width: 100%;
+            height: 100%; }
+        .content-container-schedule .schedule-container .schedule-container-div .schedule-details-container .schedule-details {
+          flex-grow: 2; }
 
-.content-container-about .page-content {
-  overflow-y: hidden !important;
-  height: 100% !important;
-  margin-left: 50px; }
+.content-container-about {
+  position: relative; }
+  .content-container-about .page-content {
+    margin-left: 50px;
+    overflow-y: hidden !important;
+    height: 100% !important;
+    display: block; }
+    .content-container-about .page-content .about-logos-container {
+      display: flex;
+      flex-direction: column; }
+      .content-container-about .page-content .about-logos-container .about-logos-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around; }
+        .content-container-about .page-content .about-logos-container .about-logos-row .about-logos-icon {
+          padding: 15px 10px; }
+          .content-container-about .page-content .about-logos-container .about-logos-row .about-logos-icon .about-logo {
+            height: 30px; }
 
 @media only screen and (min-width: 961px) {
   .content-container-about {
@@ -266,6 +320,8 @@ body * {
         max-width: 700px;
         font-size: 24px;
         font-weight: 200; }
+      .content-container-about .page-content .about-logos-container .about-logos-row .about-logos-icon .about-logo {
+        height: 20px; }
 
   .content-container-presenters .presenter-bio span {
     white-space: nowrap; }
@@ -275,52 +331,59 @@ body * {
   .content-container-schedule .schedule-container {
     margin-top: 380px;
     clear: left; }
-    .content-container-schedule .schedule-container .schedule-container-div h3 {
-      font-size: 32px;
-      margin: 0 0 20px 0; } }
+
+  h3 .icon-video-first:hover .room-video {
+    transform: translateX(-85%); } }
 @media only screen and (min-width: 1280px) {
   .content-container-schedule .hide {
     display: none;
-    visibility: hidden; } }
+    visibility: hidden; }
+  .content-container-schedule h3 .icon-video-first:hover .room-video {
+    transform: translateX(-65%) !important; }
+  .content-container-schedule .schedule-details-container ul li.schedule-lunch {
+    height: 300px !important; }
+
+  .content-container-about .page-content .about-logos-container .about-logos-row .about-logos-icon .about-logo {
+    height: 30px; } }
+@media only screen and (min-width: 1500px) {
+  .content-container-schedule h3 .icon-video-first:hover .room-video {
+    transform: translateX(-85%) !important; }
+  .content-container-schedule .schedule-details-container ul li.schedule-lunch {
+    height: 170px !important; } }
 /******************/
 /* Mobile Styling */
 /******************/
 @media only screen and (orientation: portrait) {
   .content-fixed-footer {
     display: block; }
-
-  .content-fixed-footer .footer-left,
-  .content-fixed-footer .footer-center,
-  .content-fixed-footer .footer-right {
-    text-align: center;
-    font-size: 18px;
-    line-height: 1.5em; }
-
-  .content-fixed-footer .footer-left,
-  .content-fixed-footer .footer-center {
-    position: relative; }
-
-  .content-fixed-footer .footer-left {
-    width: 54%;
-    float: left;
-    text-align: right; }
-
-  .content-fixed-footer .footer-center {
-    width: 40%;
-    float: right;
-    text-align: left; }
-
-  .content-fixed-footer .footer-right {
-    width: 100%;
-    display: block;
-    clear: both; }
+    .content-fixed-footer .footer-left,
+    .content-fixed-footer .footer-center,
+    .content-fixed-footer .footer-right {
+      text-align: center;
+      font-size: 16px;
+      line-height: 1.5em; }
+    .content-fixed-footer .footer-left,
+    .content-fixed-footer .footer-center {
+      position: relative; }
+    .content-fixed-footer .footer-left {
+      width: 50%;
+      float: left;
+      text-align: right; }
+    .content-fixed-footer .footer-center {
+      width: 42%;
+      float: right;
+      text-align: left; }
+    .content-fixed-footer .footer-right {
+      width: 100%;
+      display: block;
+      clear: both; }
 
   .content-container-home .content-home img {
     height: 100%;
     width: 100%; } }
 @media only screen and (orientation: portrait) and (max-width: 960px) {
   .content-fixed-footer {
-    padding: 20px 0 0; }
+    padding: 5px; }
 
   [class^=content-container-] .page-header,
   [class^=content-container-] .page-content {
@@ -347,6 +410,15 @@ body * {
     top: 50px; }
   .content-container-schedule .schedule-container {
     padding-top: 150px; }
+  .content-container-schedule h3 {
+    margin: 0 0 10px 0;
+    padding: 5px 5px 5px 30px;
+    position: relative;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.2); }
+    .content-container-schedule h3 .room-video {
+      left: 0;
+      width: 300px !important; }
 
   .content-container-presenters .presenter-info-wrapper {
     margin-left: 15%;
@@ -363,22 +435,36 @@ body * {
   .content-container-presenters .presenter-info-wrapper {
     top: 130px;
     position: absolute;
-    right: 10px;
-    margin: 0; } }
+    right: 10px; } }
 @media only screen and (orientation: portrait) and (max-width: 760px) {
+  .content-container-schedule .schedule-container-div h3 .icon-video-first:hover .room-video {
+    transform: translateX(-85%); }
   .content-container-schedule .schedule-container-div .schedule-details-container.right {
     -webkit-flex-direction: row !important;
     flex-direction: row !important; }
     .content-container-schedule .schedule-container-div .schedule-details-container.right .schedule-times {
-      text-align: left !important; } }
+      text-align: left !important; }
+  .content-container-schedule .schedule-container-div .schedule-details-container ul li.schedule-lunch {
+    height: 220px; }
+
+  .content-container-about .page-content .about-logos-container .about-logos-row .about-logos-icon .about-logo {
+    height: 25px; } }
 @media only screen and (orientation: portrait) and (max-width: 500px) {
+  .content-container-about .page-content .about-logos-container .about-logos-row .about-logos-icon .about-logo {
+    height: 15px; }
+
+  .content-fixed-footer .footer-left,
+  .content-fixed-footer .footer-center,
+  .content-fixed-footer .footer-right {
+    font-size: 14px; }
+
   .schedule-details-hover {
     width: 200px !important; } }
 @media only screen and (orientation: portrait) and (max-height: 500px) {
   .content-fixed-footer .footer-left,
   .content-fixed-footer .footer-center,
   .content-fixed-footer .footer-right {
-    font-size: 18px; }
+    font-size: 14px; }
 
   .content-container-home .content-home img {
     width: 139px;
@@ -399,7 +485,12 @@ body * {
     left: 54%; }
     .content-container-home .content-home img {
       width: 80%;
-      height: 80%; } }
+      height: 80%; }
+
+  .content-container-presenters .slider-pagination {
+    padding-bottom: 30px !important; }
+  .content-container-presenters .presenter-bio {
+    padding-bottom: 80px !important; } }
 /* Tablet Overrides */
 @media only screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1024px), only screen and (orientation: portrait) and (min-width: 834px) and (max-width: 834px), only screen and (orientation: portrait) and (min-width: 1024px) and (max-width: 1024px), only screen and (orientation: portrait) and (min-width: 1366px) and (max-width: 1366px) {
   .content-container-presenters .presenter-info-wrapper {

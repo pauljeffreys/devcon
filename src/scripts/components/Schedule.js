@@ -41,7 +41,7 @@ class Schedule extends React.Component {
         const settings = {
             dots: false,
             slidesToShow: 4,
-            slidesToScroll: 4,
+            swipe: false,
             dots: false,
             autoplay: false,
             arrows: false,
@@ -51,6 +51,7 @@ class Schedule extends React.Component {
                     settings: {
                         slidesToShow: 2,
                         slidesToScroll: 2,
+                        swipe: true,
                         dots: false,
                         autoplay: true,
                         autoplaySpeed: 6000,
@@ -62,6 +63,7 @@ class Schedule extends React.Component {
                     settings: {
                         slidesToShow: 1,
                         slidesToScroll: 1,
+                        swipe: true,
                         dots: false,
                         autoplay: true,
                         autoplaySpeed: 6000,
@@ -78,11 +80,26 @@ class Schedule extends React.Component {
                     <span className="rectangle-2"></span>
                 </div>
                 <div className="schedule-container">
-                    <p className="schedule-filler">8:30am - Breakfast & Coffee</p>
-                    <p className="schedule-filler">9:00am - Opening Remarks - Joe Fuller & Eric Kleintop</p>
+                    <p className="schedule-filler">8:30am - Breakfast & Coffee with Prescription Coffee Lab</p>
+                    <p className="schedule-filler">9:00am - Opening Remarks with Joe Fuller & Eric Kleintop</p>
                     <Slider {...settings}>
                         <div className="schedule-container-div">
-                            <h3>Lynnhaven</h3>
+                            <h3>Lynnhaven
+                                <div className="icon-video icon-video-first">
+                                    <img src="/src/assets/images/icon-video.png" alt="Live Stream for the Lynnhaven Room" width="30" height="40" />
+                                    <div className="room-video">
+                                        <div className="video-disclaimer">
+                                            <p>Remote attendees may access the meeting live by clicking the button below and entering as a Guest with their name.</p>
+                                            <p>You may be prompted to install an add-in. Follow the prompts, and restart your browser and/or computer if necessary. This may take a few seconds to complete. Please be sure your volume is turned up on your computer and the audio icon at the top left is green.</p>
+                                            <p><a href="http://dominionenterprises.adobeconnect.com/common/help/en/support/meeting_test.htm" target="_blank">Please test the connection ahead of time by visiting this link</a></p>
+                                        </div>
+                                        <a href="http://dominionenterprises.adobeconnect.com/lynnhaven/" target="_blank" title="Live Stream for the Lynnhaven Room">
+                                            <img src="/src/assets/images/button_watch-live.png" alt="Live Stream for the Lynnhaven Room" width="200" height="51" className=
+                                        "button_watch-live" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </h3>
                             <div className="schedule-details-container">
                                 <div className="schedule-times">
                                     <ul>
@@ -144,7 +161,32 @@ class Schedule extends React.Component {
                                             </div>
                                         </li>
                                         <li className="schedule-lunch">
-                                            <span>Lunch</span>
+                                            Lunch<br />
+                                            <span>
+                                                Microsoft Keynote
+                                            </span><br />
+                                            Conversational Artificial Intelligence using Bots<br />
+                                            <hr />
+                                            Talk location: YORK ROOM
+                                            <div className="schedule-details-hover">
+                                                <span>Microsoft Keynote</span><br />
+                                                Conversational Artificial Intelligence using Bots
+                                                <hr />
+                                                From app to cloud, AI takes ordinary action and optimizes it, no matter the platform. Microsoft has been striving to proliferate AI programming to minimize everyday challenges and make today&#39;s world accessible for people and businesses alike. The session will talk about this new canvas and how one can extend existing and new applications to newer user experience such as Cortana and Alexa.
+                                                <hr />
+                                                <span className="addtocalendar atc-style-blue">
+                                                    <var className="atc_event">
+                                                        <var className="atc_date_start">2017-11-03 12:00:00</var>
+                                                        <var className="atc_date_end">2017-11-03 13:00:00</var>
+                                                        <var className="atc_timezone">America/New_York</var>
+                                                        <var className="atc_title">DevCon5 - Microsoft Keynote - Conversational Artificial Intelligence using Bots</var>
+                                                        <var className="atc_description">From app to cloud, AI takes ordinary action and optimizes it, no matter the platform. Microsoft has been striving to proliferate AI programming to minimize everyday challenges and make today&#39;s world accessible for people and businesses alike. The session will talk about this new canvas and how one can extend existing and new applications to newer user experience such as Cortana and Alexa.</var>
+                                                        <var className="atc_location">York Room, 20th Floor</var>
+                                                        <var className="atc_organizer">Microsoft</var>
+                                                        <var className="atc_organizer_email">devcon@dominionenterprises.com</var>
+                                                    </var>
+                                                </span>
+                                            </div>
                                         </li>
                                         <li>
                                             <span>Pam Bandy & Karin Schultz</span><br />
@@ -243,7 +285,22 @@ class Schedule extends React.Component {
                             </div>
                         </div>
                         <div className="schedule-container-div">
-                            <h3>York</h3>
+                            <h3>York
+                                <div className="icon-video">
+                                    <img src="/src/assets/images/icon-video.png" alt="Live Stream for the Lynnhaven Room" width="30" height="40" />
+                                    <div className="room-video">
+                                        <div className="video-disclaimer">
+                                            <p>Remote attendees may access the meeting live by clicking the button below and entering as a Guest with their name.</p>
+                                            <p>You may be prompted to install an add-in. Follow the prompts, and restart your browser and/or computer if necessary. This may take a few seconds to complete. Please be sure your volume is turned up on your computer and the audio icon at the top left is green.</p>
+                                            <p><a href="http://dominionenterprises.adobeconnect.com/common/help/en/support/meeting_test.htm" target="_blank">Please test the connection ahead of time by visiting this link</a></p>
+                                        </div>
+                                        <a href="http://dominionenterprises.adobeconnect.com/york/" target="_blank" title="Live Stream for the York Room">
+                                            <img src="/src/assets/images/button_watch-live.png" alt="Live Stream for the Lynnhaven Room" width="200" height="51" className=
+                                        "button_watch-live" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </h3>
                             <div className="schedule-details-container right">
                                 <div className="schedule-times hide">
                                     <ul>
@@ -260,12 +317,14 @@ class Schedule extends React.Component {
                                     <ul>
                                         <li>
                                             <span>Alicia Sedarski</span><br />
-                                            Coding Dojo
+                                            Mob Programming
                                             <div className="schedule-details-hover">
                                                 <span>Alicia Sedarski</span><br />
-                                                Coding Dojo
+                                                Mob Programming
                                                 <hr />
-                                                Workshop
+                                                Join me for an hour of coding. That&#39;s right, actual coding in a conference session!<br /><br />
+                                                We&#39;ll use and learn about mob programming, and some best practices while solving a fun little problem.<br /><br />
+                                                No experience required. We&#39;ll be coding in PHP, but it&#39;s okay if you don&#39;t know it, we&#39;ll have an expert to help you out.
                                                 <hr />
                                                 <span className="addtocalendar atc-style-blue">
                                                     <var className="atc_event">
@@ -273,7 +332,7 @@ class Schedule extends React.Component {
                                                         <var className="atc_date_end">2017-11-03 11:00:00</var>
                                                         <var className="atc_timezone">America/New_York</var>
                                                         <var className="atc_title">DevCon5 - Coding Dojo</var>
-                                                        <var className="atc_description">Workshop</var>
+                                                        <var className="atc_description">Join me for an hour of coding. That&#39;s right, actual coding in a conference session!<br /><br />We&#39;ll use and learn about mob programming, and some best practices while solving a fun little problem.<br /><br />No experience required. We&#39;ll be coding in PHP, but it&#39;s okay if you don&#39;t know it, we&#39;ll have an expert to help you out.</var>
                                                         <var className="atc_location">York Room, 20th Floor</var>
                                                         <var className="atc_organizer">Alicia Sedarski</var>
                                                         <var className="atc_organizer_email">alicia.sedarski@dominionenterprises.com</var>
@@ -309,7 +368,30 @@ class Schedule extends React.Component {
                                             </div>
                                         </li>
                                         <li className="schedule-lunch">
-                                            <span>Lunch</span>
+                                            Lunch<br />
+                                            <span>
+                                                Microsoft Keynote
+                                            </span><br />
+                                            Conversational Artificial Intelligence using Bots
+                                            <div className="schedule-details-hover">
+                                                <span>Microsoft Keynote</span><br />
+                                                Conversational Artificial Intelligence using Bots
+                                                <hr />
+                                                From app to cloud, AI takes ordinary action and optimizes it, no matter the platform. Microsoft has been striving to proliferate AI programming to minimize everyday challenges and make today&#39;s world accessible for people and businesses alike. The session will talk about this new canvas and how one can extend existing and new applications to newer user experience such as Cortana and Alexa.
+                                                <hr />
+                                                <span className="addtocalendar atc-style-blue">
+                                                    <var className="atc_event">
+                                                        <var className="atc_date_start">2017-11-03 12:00:00</var>
+                                                        <var className="atc_date_end">2017-11-03 13:00:00</var>
+                                                        <var className="atc_timezone">America/New_York</var>
+                                                        <var className="atc_title">DevCon5 - Microsoft Keynote - Conversational Artificial Intelligence using Bots</var>
+                                                        <var className="atc_description">From app to cloud, AI takes ordinary action and optimizes it, no matter the platform. Microsoft has been striving to proliferate AI programming to minimize everyday challenges and make today&#39;s world accessible for people and businesses alike. The session will talk about this new canvas and how one can extend existing and new applications to newer user experience such as Cortana and Alexa.</var>
+                                                        <var className="atc_location">York Room, 20th Floor</var>
+                                                        <var className="atc_organizer">Microsoft</var>
+                                                        <var className="atc_organizer_email">devcon@dominionenterprises.com</var>
+                                                    </var>
+                                                </span>
+                                            </div>
                                         </li>
                                         <li>
                                             <span>Chad Gray</span><br />
@@ -408,7 +490,22 @@ class Schedule extends React.Component {
                             </div>
                         </div>
                         <div className="schedule-container-div">
-                            <h3>Rappahanock</h3>
+                            <h3>Rappahannock
+                                <div className="icon-video">
+                                    <img src="/src/assets/images/icon-video.png" alt="Live Stream for the Lynnhaven Room" width="30" height="40" />
+                                    <div className="room-video">
+                                        <div className="video-disclaimer">
+                                            <p>Remote attendees may access the meeting live by clicking the button below and entering as a Guest with their name.</p>
+                                            <p>You may be prompted to install an add-in. Follow the prompts, and restart your browser and/or computer if necessary. This may take a few seconds to complete. Please be sure your volume is turned up on your computer and the audio icon at the top left is green.</p>
+                                            <p><a href="http://dominionenterprises.adobeconnect.com/common/help/en/support/meeting_test.htm" target="_blank">Please test the connection ahead of time by visiting this link</a></p>
+                                        </div>
+                                        <a href="http://dominionenterprises.adobeconnect.com/rappahannock/" target="_blank" title="Live Stream for the Rappahannock Room">
+                                            <img src="/src/assets/images/button_watch-live.png" alt="Live Stream for the Lynnhaven Room" width="200" height="51" className=
+                                        "button_watch-live" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </h3>
                             <div className="schedule-details-container">
                                 <div className="schedule-times hide">
                                     <ul>
@@ -439,7 +536,7 @@ class Schedule extends React.Component {
                                                         <var className="atc_timezone">America/New_York</var>
                                                         <var className="atc_title">DevCon5 - Commercializing Voice in your Apps</var>
                                                         <var className="atc_description">This presentation will focus on the the growing trend of voice search. Our approach in trying to commercializing this feature in our Apps. Suggestions on how you could tap into it. This will include a demo of the current implementation and and overview of our learning and challenges.</var>
-                                                        <var className="atc_location">Rappahanock Room, 20th Floor</var>
+                                                        <var className="atc_location">Rappahannock Room, 20th Floor</var>
                                                         <var className="atc_organizer">Rakesh Nookala</var>
                                                         <var className="atc_organizer_email">nookala@dominionenterprises.com</var>
                                                     </var>
@@ -462,7 +559,7 @@ class Schedule extends React.Component {
                                                         <var className="atc_timezone">America/New_York</var>
                                                         <var className="atc_title">DevCon5 - Building Personal Assistant "Skills" with Amazon Alexa</var>
                                                         <var className="atc_description">Will walk through the personal assistant landscape. Will show a demo of a homes.com alexa skill. Will walk through how anyone can create a skill for alexa by looking at the setup and code required to do so.</var>
-                                                        <var className="atc_location">Rappahanock Room, 20th Floor</var>
+                                                        <var className="atc_location">Rappahannock Room, 20th Floor</var>
                                                         <var className="atc_organizer">Jeff Pratt</var>
                                                         <var className="atc_organizer_email">jeff.pratt@homes.com</var>
                                                     </var>
@@ -470,7 +567,32 @@ class Schedule extends React.Component {
                                             </div>
                                         </li>
                                         <li className="schedule-lunch">
-                                            <span>Lunch</span>
+                                            Lunch<br />
+                                            <span>
+                                                Microsoft Keynote
+                                            </span><br />
+                                            Conversational Artificial Intelligence using Bots<br />
+                                            <hr />
+                                            Talk location: YORK ROOM
+                                            <div className="schedule-details-hover">
+                                                <span>Microsoft Keynote</span><br />
+                                                Conversational Artificial Intelligence using Bots
+                                                <hr />
+                                                From app to cloud, AI takes ordinary action and optimizes it, no matter the platform. Microsoft has been striving to proliferate AI programming to minimize everyday challenges and make today&#39;s world accessible for people and businesses alike. The session will talk about this new canvas and how one can extend existing and new applications to newer user experience such as Cortana and Alexa.
+                                                <hr />
+                                                <span className="addtocalendar atc-style-blue">
+                                                    <var className="atc_event">
+                                                        <var className="atc_date_start">2017-11-03 12:00:00</var>
+                                                        <var className="atc_date_end">2017-11-03 13:00:00</var>
+                                                        <var className="atc_timezone">America/New_York</var>
+                                                        <var className="atc_title">DevCon5 - Microsoft Keynote - Conversational Artificial Intelligence using Bots</var>
+                                                        <var className="atc_description">From app to cloud, AI takes ordinary action and optimizes it, no matter the platform. Microsoft has been striving to proliferate AI programming to minimize everyday challenges and make today&#39;s world accessible for people and businesses alike. The session will talk about this new canvas and how one can extend existing and new applications to newer user experience such as Cortana and Alexa.</var>
+                                                        <var className="atc_location">York Room, 20th Floor</var>
+                                                        <var className="atc_organizer">Microsoft</var>
+                                                        <var className="atc_organizer_email">devcon@dominionenterprises.com</var>
+                                                    </var>
+                                                </span>
+                                            </div>
                                         </li>
                                         <li>
                                             <span>Robert Bittle</span><br />
@@ -488,7 +610,7 @@ class Schedule extends React.Component {
                                                         <var className="atc_timezone">America/New_York</var>
                                                         <var className="atc_title">DevCon5 - Getting to know Go</var>
                                                         <var className="atc_description">With its simple design, Go has quickly become one of the top system level programming languages. From Docker to Syncthing, there are all kinds of cool open source projects being built in Go. Go is a relatively easy language to learn, but it can be difficult to know where to start especially if you come from a background of interpreted or dynamically typed languages.  In this talk we will introduce the basic language syntax and features as well as the tools that make learning the language easier.</var>
-                                                        <var className="atc_location">Rappahanock Room, 20th Floor</var>
+                                                        <var className="atc_location">Rappahannock Room, 20th Floor</var>
                                                         <var className="atc_organizer">Robert Bittle</var>
                                                         <var className="atc_organizer_email">robert.bittle@traderinteractive.com</var>
                                                     </var>
@@ -511,7 +633,7 @@ class Schedule extends React.Component {
                                                         <var className="atc_timezone">America/New_York</var>
                                                         <var className="atc_title">DevCon5 - Seeing Through Googles Eyes</var>
                                                         <var className="atc_description">Aligning development, product & marketing goals to build site traffic & topic authority.</var>
-                                                        <var className="atc_location">Rappahanock Room, 20th Floor</var>
+                                                        <var className="atc_location">Rappahannock Room, 20th Floor</var>
                                                         <var className="atc_organizer">Grant Simmons</var>
                                                         <var className="atc_organizer_email">Grant.Simmons@homes.com</var>
                                                     </var>
@@ -534,7 +656,7 @@ class Schedule extends React.Component {
                                                         <var className="atc_timezone">America/New_York</var>
                                                         <var className="atc_title">DevCon5 - QA Best Practices in an Agile Production Environment</var>
                                                         <var className="atc_description">Going to discuss how to survive as a QA Engineer in an agile environment. This will cover the top 5 Best QA Practices in an agile environment. It will be educational for both QAs AND Devs, sort of a "Can we all just get along" angle. How we work together and Support each other is  extremely important to achieving the best possible code release results. This will be an interactive session that I believe everyone will get a lot out of. My mentor, Dave Haeffner, took me down this road a few years ago and I have never looked back.</var>
-                                                        <var className="atc_location">Rappahanock Room, 20th Floor</var>
+                                                        <var className="atc_location">Rappahannock Room, 20th Floor</var>
                                                         <var className="atc_organizer">Loran Martin</var>
                                                         <var className="atc_organizer_email">loran.martin@traderinteractive.com</var>
                                                     </var>
@@ -557,7 +679,7 @@ class Schedule extends React.Component {
                                                         <var className="atc_timezone">America/New_York</var>
                                                         <var className="atc_title">DevCon5 - Marketing: How Comprehensive is Your Marketing?</var>
                                                         <var className="atc_description">Every business can improve comprehensive marketing with 1) literature reviews of scholarly articles, 2) experimental research designs, and 3) statistical analysis.</var>
-                                                        <var className="atc_location">Rappahanock Room, 20th Floor</var>
+                                                        <var className="atc_location">Rappahannock Room, 20th Floor</var>
                                                         <var className="atc_organizer">Adam Bess</var>
                                                         <var className="atc_organizer_email">adam.bess@homes.com</var>
                                                     </var>
@@ -569,7 +691,22 @@ class Schedule extends React.Component {
                             </div>
                         </div>
                         <div className="schedule-container-div">
-                            <h3>Elizabeth</h3>
+                            <h3>Elizabeth
+                                <div className="icon-video">
+                                    <img src="/src/assets/images/icon-video.png" alt="Live Stream for the Lynnhaven Room" width="30" height="40" />
+                                    <div className="room-video">
+                                        <div className="video-disclaimer">
+                                            <p>Remote attendees may access the meeting live by clicking the button below and entering as a Guest with their name.</p>
+                                            <p>You may be prompted to install an add-in. Follow the prompts, and restart your browser and/or computer if necessary. This may take a few seconds to complete. Please be sure your volume is turned up on your computer and the audio icon at the top left is green.</p>
+                                            <p><a href="http://dominionenterprises.adobeconnect.com/common/help/en/support/meeting_test.htm" target="_blank">Please test the connection ahead of time by visiting this link</a></p>
+                                        </div>
+                                        <a href="http://dominionenterprises.adobeconnect.com/elizabeth/" target="_blank" title="Live Stream for the Elizabeth Room">
+                                            <img src="/src/assets/images/button_watch-live.png" alt="Live Stream for the Lynnhaven Room" width="200" height="51" className=
+                                        "button_watch-live" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </h3>
                             <div className="schedule-details-container right">
                                 <div className="schedule-times">
                                     <ul>
@@ -631,7 +768,32 @@ class Schedule extends React.Component {
                                             </div>
                                         </li>
                                         <li className="schedule-lunch">
-                                            <span>Lunch</span>
+                                            Lunch<br />
+                                            <span>
+                                                Microsoft Keynote
+                                            </span><br />
+                                            Conversational Artificial Intelligence using Bots<br />
+                                            <hr />
+                                            Talk location: YORK ROOM
+                                            <div className="schedule-details-hover">
+                                                <span>Microsoft Keynote</span><br />
+                                                Conversational Artificial Intelligence using Bots
+                                                <hr />
+                                                From app to cloud, AI takes ordinary action and optimizes it, no matter the platform. Microsoft has been striving to proliferate AI programming to minimize everyday challenges and make today&#39;s world accessible for people and businesses alike. The session will talk about this new canvas and how one can extend existing and new applications to newer user experience such as Cortana and Alexa.
+                                                <hr />
+                                                <span className="addtocalendar atc-style-blue">
+                                                    <var className="atc_event">
+                                                        <var className="atc_date_start">2017-11-03 12:00:00</var>
+                                                        <var className="atc_date_end">2017-11-03 13:00:00</var>
+                                                        <var className="atc_timezone">America/New_York</var>
+                                                        <var className="atc_title">DevCon5 - Microsoft Keynote - Conversational Artificial Intelligence using Bots</var>
+                                                        <var className="atc_description">From app to cloud, AI takes ordinary action and optimizes it, no matter the platform. Microsoft has been striving to proliferate AI programming to minimize everyday challenges and make today&#39;s world accessible for people and businesses alike. The session will talk about this new canvas and how one can extend existing and new applications to newer user experience such as Cortana and Alexa.</var>
+                                                        <var className="atc_location">York Room, 20th Floor</var>
+                                                        <var className="atc_organizer">Microsoft</var>
+                                                        <var className="atc_organizer_email">devcon@dominionenterprises.com</var>
+                                                    </var>
+                                                </span>
+                                            </div>
                                         </li>
                                         <li>
                                             <span>Jesse Wright & Patrick Kilduff</span><br />
@@ -709,7 +871,7 @@ class Schedule extends React.Component {
                                                 <span>Silver Ibenye</span><br />
                                                 Lead Insights Aggregation With Apache Spark And Kafka - My experience
                                                 <hr />
-                                                A year ago I agreed to take up a challenge to re-implement ForRent's Lead Insights data process. In this talk I will share the challenges I had and the lessons I learned using Apache Spark and Kafka to generate user insights for Leads (guest cards) submitted through the front-end website.
+                                                A year ago I agreed to take up a challenge to re-implement ForRent&#39;s Lead Insights data process. In this talk I will share the challenges I had and the lessons I learned using Apache Spark and Kafka to generate user insights for Leads (guest cards) submitted through the front-end website.
                                                 <hr />
                                                 <span className="addtocalendar atc-style-blue">
                                                     <var className="atc_event">
@@ -717,7 +879,7 @@ class Schedule extends React.Component {
                                                         <var className="atc_date_end">2017-11-03 17:00:00</var>
                                                         <var className="atc_timezone">America/New_York</var>
                                                         <var className="atc_title">DevCon5 - Lead Insights Aggregation With Apache Spark And Kafka - My experience</var>
-                                                        <var className="atc_description">A year ago I agreed to take up a challenge to re-implement ForRent's Lead Insights data process. In this talk I will share the challenges I had and the lessons I learned using Apache Spark and Kafka to generate user insights for Leads (guest cards) submitted through the front-end website.</var>
+                                                        <var className="atc_description">A year ago I agreed to take up a challenge to re-implement ForRent&#39;s Lead Insights data process. In this talk I will share the challenges I had and the lessons I learned using Apache Spark and Kafka to generate user insights for Leads (guest cards) submitted through the front-end website.</var>
                                                         <var className="atc_location">Elizabeth Room, 20th Floor</var>
                                                         <var className="atc_organizer">Silver Ibenye</var>
                                                         <var className="atc_organizer_email">silver.ibenye@forrent.com</var>
