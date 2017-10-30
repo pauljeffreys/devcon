@@ -460,6 +460,10 @@ body * {
 
   .schedule-details-hover {
     width: 200px !important; } }
+@media only screen and (orientation: portrait) and (max-width: 400px) {
+  .content-container-about .page-content {
+    overflow-y: scroll !important;
+    padding-bottom: 140px; } }
 @media only screen and (orientation: portrait) and (max-height: 500px) {
   .content-fixed-footer .footer-left,
   .content-fixed-footer .footer-center,
